@@ -33,7 +33,7 @@ client = openai.OpenAI(
 ### **Paso 2: Definición del caso de uso**
 El objetivo es crear un **asistente automatizado** que responda preguntas frecuentes sobre una aplicación de gestión del tiempo. El asistente debe ser capaz de generar respuestas breves y claras, adaptadas a las necesidades de los usuarios.
 
-#### Preguntas Frecuentes a Responder
+#### Preguntas frecuentes a responder
 Algunas de las preguntas que el chatbot debe poder responder incluyen:
 
 1. ¿Cuáles son las características principales de la aplicación de gestión del tiempo?
@@ -43,7 +43,7 @@ Algunas de las preguntas que el chatbot debe poder responder incluyen:
 
 ---
 
-### **Paso 3: Implementación del Uso del API**
+### **Paso 3: Implementación del uso del API**
 
 Se creó una función en Python para enviar solicitudes a la API de OpenAI y recibir las respuestas. El sistema utiliza un mensaje de sistema que establece el tono de las respuestas como "útil" y se limita a generar respuestas de no más de 10 palabras.
 
