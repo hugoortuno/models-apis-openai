@@ -30,11 +30,11 @@ client = openai.OpenAI(
 
 ---
 
-### **Paso 2: Definición del Caso de Uso**
-Nuestro objetivo es crear un **asistente automatizado** que responda preguntas frecuentes sobre una aplicación de gestión del tiempo. El asistente debe ser capaz de generar respuestas breves y claras, adaptadas a las necesidades de los usuarios.
+### **Paso 2: Definición del caso de uso**
+El objetivo es crear un **asistente automatizado** que responda preguntas frecuentes sobre una aplicación de gestión del tiempo. El asistente debe ser capaz de generar respuestas breves y claras, adaptadas a las necesidades de los usuarios.
 
 #### Preguntas Frecuentes a Responder
-Algunas de las preguntas que nuestro chatbot debe poder responder incluyen:
+Algunas de las preguntas que el chatbot debe poder responder incluyen:
 
 1. ¿Cuáles son las características principales de la aplicación de gestión del tiempo?
 2. ¿Está disponible para iOS y Android?
@@ -47,7 +47,7 @@ Algunas de las preguntas que nuestro chatbot debe poder responder incluyen:
 
 Se creó una función en Python para enviar solicitudes a la API de OpenAI y recibir las respuestas. El sistema utiliza un mensaje de sistema que establece el tono de las respuestas como "útil" y se limita a generar respuestas de no más de 10 palabras.
 
-#### **Código para Obtener Respuesta del Modelo**
+#### **Código para obtener respuesta del modelo**
 ```python
 # Función para obtener respuesta del modelo
 def obtener_respuesta(pregunta):
@@ -76,8 +76,8 @@ for pregunta in preguntas_frecuentes:
 
 ---
 
-### **Resultados y Hallazgos**
-Tras probar el sistema con las preguntas frecuentes, encontramos que el modelo genera respuestas útiles, ajustadas a las indicaciones proporcionadas. Los resultados mostraron:
+### **Resultados y hallazgos**
+Tras probar el sistema con las preguntas frecuentes, encontré que el modelo genera respuestas útiles, ajustadas a las indicaciones proporcionadas. Los resultados mostraron:
 
 - **Respuestas claras y concisas**: El sistema cumplió con el requerimiento de proporcionar respuestas con menos de 10 palabras.
 - **Eficiencia en el uso del tiempo**: Se ajustó un tiempo de espera entre cada respuesta para simular tiempos de procesamiento realistas sin sobrecargar la API.
@@ -88,15 +88,15 @@ Pregunta: ¿Cuáles son las características principales de la aplicación de ge
 Respuesta: Gestión de tareas, seguimiento, notificaciones, sincronización.
 ```
 
-### **Lecciones Aprendidas**
+### **Lecciones aprendidas**
 - **Parámetros del modelo**: Ajustar el número de palabras por respuesta y definir correctamente el contexto en el mensaje del sistema fue clave para obtener respuestas útiles.
 - **Rate-limiting**: Es importante implementar mecanismos de control como `time.sleep()` para evitar superar los límites de la API.
 - **Escalabilidad**: Este tipo de chatbot puede escalar fácilmente para soportar más preguntas frecuentes con pequeñas modificaciones.
 
 ---
 
-### **Reflexión del Grupo**
-Durante la discusión, exploramos cómo la integración de modelos de lenguaje como ChatGPT puede automatizar tareas repetitivas en negocios y aplicaciones. También consideramos los desafíos éticos, como el riesgo de generar respuestas incorrectas y la necesidad de monitorear y refinar continuamente los resultados del modelo para garantizar precisión y adecuación.
+### **Reflexión**
+Durante el desarrollo de este mini proyecto he explorado cómo la integración de modelos de lenguaje como ChatGPT puede automatizar tareas repetitivas en negocios y aplicaciones. También consideramos los desafíos éticos, como el riesgo de generar respuestas incorrectas y la necesidad de monitorear y refinar continuamente los resultados del modelo para garantizar precisión y adecuación.
 
 ---
 
