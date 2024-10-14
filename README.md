@@ -109,5 +109,3 @@ El uso de modelos de lenguaje como ChatGPT en este mini proyecto demostró ser e
 - [Presentación en Canva](https://www.canva.com/design/DAGTisfsW3o/7xddMaHEMyg-9hgYvdKULQ/edit)
 - [Repositorio en GitHub](https://github.com/hugoortuno/models-apis-openai.git)
 ```
-
-Este archivo README está diseñado para proporcionar una guía detallada y clara sobre cómo desarrollar el proyecto, incluyendo la estructura del código y los enlaces a la presentación y al repositorio en GitHub.
