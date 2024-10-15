@@ -1,6 +1,3 @@
-Aquí tienes el desarrollo detallado del proyecto solicitado en formato Markdown para Visual Studio Code:
-
-```markdown
 # **Mini Proyecto: Utilización de una API de modelos de lenguaje**
 
 ### **Introducción: Caso de uso**
